@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coach Tu'Wan – Faith-Driven Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b0e16;
+      --text: #ffffff;
+      --muted: #9ba3af;
+      --accent: #00ffc2;
+      --card: #161a27;
+      --highlight: #1e2233;
+    }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1605296867424-35fc25c921f2?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 120px 20px 100px;
+    }
+
+    header h1 {
+      font-size: 46px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      text-shadow: 0 3px 12px #000;
+    }
+
+    header p {
+      max-width: 680px;
+      margin: 0 auto 30px;
+      font-size: 20px;
+      color: var(--muted);
+      text-shadow: 0 2px 10px #000;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      min-width: 160px;
+      font-size: 16px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: #00e0ae;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--muted);
+      color: var(--muted);
+    }
+
+    .btn-outline:hover {
+      color: var(--text);
+      border-color: var(--text);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 0 0 1px #2c2f3d;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .pricing {
+      text-align: center;
+    }
+
+    .price-box {
+      background: var(--card);
+      display: inline-block;
+      padding: 48px;
+      border-radius: 20px;
+      box-shadow: 0 0 0 1px #2c2f3d;
+    }
+
+    .price-box h3 {
+      font-size: 24px;
+    }
+
+    .price {
+      font-size: 40px;
+      color: var(--accent);
+      margin: 16px 0;
+      font-weight: 800;
+    }
+
+    .price-box ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .testimonial {
+      background: var(--highlight);
+      padding: 28px;
+      border-radius: 16px;
+      font-size: 16px;
+    }
+
+    .testimonial p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .testimonial strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+      .section-title {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Faith-Driven Fitness Coaching with Coach Tu’Wan</h1>
+    <p>Transform your body and renew your mindset — with training built on discipline, faith, and consistency.</p>
+    <div class="buttons">
+      <a href="https://calendly.com/demo-strategy-call" class="btn btn-primary">Book Strategy Call</a>
+      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn-outline">Join Now</a>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">What You’ll Get</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Customized Training Plan</h3>
+        <p>Workouts built for your goals, schedule, and level — updated weekly for real results.</p>
+      </div>
+      <div class="card">
+        <h3>Faith-Based Coaching</h3>
+        <p>Tu’Wan blends spiritual strength with fitness to help you grow inside and out.</p>
+      </div>
+      <div class="card">
+        <h3>Nutrition & Support</h3>
+        <p>Simple, flexible meal frameworks — plus 1-on-1 accountability and private chat access to Coach Tu’Wan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2 class="section-title">Straightforward Pricing</h2>
+    <div class="price-box">
+      <h3>1-on-1 Coaching</h3>
+      <p class="price">$250/mo</p>
+      <ul>
+        <li>✓ Weekly check-ins & updates</li>
+        <li>✓ Personalized workouts</li>
+        <li>✓ Flexible nutrition help</li>
+      </ul>
+      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn-primary">Join Coaching</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Client Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“Coach Tu’Wan gave me structure and purpose again. This is deeper than just a workout plan.”</p>
+        <strong>— Jalen R.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Best shape of my life — and my mindset is the strongest it’s ever been.”</p>
+        <strong>— Marcus B.</strong>
+      </div>
+      <div class="testimonial">
+        <p>“Tu’Wan helped me build faith, muscle, and consistency. It’s coaching with real results.”</p>
+        <strong>— Anita C.</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Coach Tu'Wan. Built with purpose. | Demo only – backend not fully wired up yet.
+  </footer>
+
+</body>
+</html>
