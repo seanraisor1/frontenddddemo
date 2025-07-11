@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coach Tu'Wan – Elite 1:1 Fitness Coaching</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coach Tu'Wan – Faith-Based Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0B0F1C;
+      --accent: #00ffd0;
       --text: #ffffff;
-      --muted: #9faab9;
-      --accent: #00ffc2;
-      --card: #1a1d2d;
+      --muted: #c0c7d1;
+      --card-bg: rgba(0, 0, 0, 0.6);
     }
 
     * {
@@ -22,35 +21,38 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: var(--bg);
+      background: url('https://raw.githubusercontent.com/seanraisor1/CoachKingPayton/refs/heads/main/Tuwan%20hero.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: var(--text);
       line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      padding: 60px 20px;
     }
 
     header {
-      background-image: url('https://raw.githubusercontent.com/seanraisor1/CoachKingPayton/refs/heads/main/Tuwan%20hero.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 140px 20px 120px;
       text-align: center;
+      padding: 40px 20px;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 38px;
       font-weight: 800;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      margin-bottom: 16px;
     }
 
     header p {
-      max-width: 640px;
-      margin: 20px auto;
+      max-width: 600px;
+      margin: 0 auto 24px;
       color: var(--muted);
       font-size: 18px;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
     }
 
     .buttons {
-      margin-top: 30px;
       display: flex;
       justify-content: center;
       gap: 16px;
@@ -58,14 +60,13 @@
     }
 
     .btn {
-      padding: 14px 28px;
+      padding: 12px 28px;
       border-radius: 8px;
-      font-size: 16px;
       font-weight: 600;
-      min-width: 160px;
-      text-align: center;
-      transition: 0.3s ease;
+      font-size: 16px;
       text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
     }
 
     .btn-primary {
@@ -74,7 +75,7 @@
     }
 
     .btn-primary:hover {
-      background: #00e6b0;
+      background: #00e6ba;
     }
 
     .btn-outline {
@@ -83,176 +84,154 @@
     }
 
     .btn-outline:hover {
-      border-color: var(--text);
       color: var(--text);
+      border-color: var(--text);
     }
 
     section {
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
     }
 
-    .section-title {
-      font-size: 32px;
-      font-weight: 700;
+    h2 {
       text-align: center;
-      margin-bottom: 48px;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 32px;
     }
 
-    .features {
+    .features,
+    .testimonials {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 32px;
+      gap: 24px;
     }
 
     .card {
-      background: var(--card);
-      border-radius: 14px;
-      padding: 32px;
-      box-shadow: 0 0 0 1px #2c2f42;
-      text-align: center;
+      padding: 24px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
     }
 
     .card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-weight: 600;
     }
 
     .card p {
-      color: var(--muted);
       font-size: 15px;
-    }
-
-    .pricing {
-      text-align: center;
+      color: var(--muted);
     }
 
     .price-box {
-      display: inline-block;
-      background: var(--card);
-      padding: 48px;
-      border-radius: 18px;
-      box-shadow: 0 0 0 1px #2c2f42;
+      text-align: center;
     }
 
     .price {
       font-size: 40px;
-      font-weight: 800;
       color: var(--accent);
-      margin: 20px 0;
+      font-weight: 800;
+      margin: 16px 0;
     }
 
-    .price-box ul {
+    ul {
       list-style: none;
       padding: 0;
       color: var(--muted);
-      font-size: 15px;
       line-height: 1.8;
-      margin-bottom: 24px;
-    }
-
-    .testimonials {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 32px;
-    }
-
-    .testimonial {
-      background: #141622;
-      padding: 28px;
-      border-radius: 16px;
-    }
-
-    .testimonial p {
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .testimonial strong {
-      display: block;
-      margin-top: 10px;
-      color: var(--text);
+      font-size: 16px;
     }
 
     footer {
       text-align: center;
-      padding: 60px 20px 40px;
       color: var(--muted);
       font-size: 14px;
+      margin-top: 40px;
+      padding-bottom: 40px;
     }
 
     @media (max-width: 600px) {
-      header h1 { font-size: 28px; }
-      .section-title { font-size: 24px; }
+      header h1 {
+        font-size: 28px;
+      }
+      section {
+        padding: 24px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
 
-  <header>
-    <h1>Faith-Driven Fitness Coaching with Coach Tu’Wan</h1>
-    <p>Transform your body and renew your mindset — with training built on discipline, faith, and consistency.</p>
-    <div class="buttons">
-      <a href="https://calendly.com/demo-strategy-call" class="btn btn-primary">Book Strategy Call</a>
-      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn-outline">Join Now</a>
-    </div>
-  </header>
+    <header>
+      <h1>Faith-Driven Fitness Coaching with Coach Tu’Wan</h1>
+      <p>Transform your body and renew your mindset — with training built on discipline, faith, and consistency.</p>
+      <div class="buttons">
+        <a href="https://calendly.com/seanmnr20/30min" class="btn btn-primary">Book Strategy Call</a>
+        <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn-outline">Join Now</a>
+      </div>
+    </header>
 
-  <section>
-    <h2 class="section-title">What You’ll Get</h2>
-    <div class="features">
-      <div class="card">
-        <h3>Custom Training Plan</h3>
-        <p>Workouts tailored to your goals and lifestyle — updated weekly for progress that sticks.</p>
+    <section>
+      <h2>What You’ll Get</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Customized Training</h3>
+          <p>Workouts tailored to your goals and weekly progress — no cookie-cutter plans.</p>
+        </div>
+        <div class="card">
+          <h3>Faith-Based Mindset</h3>
+          <p>Scripture-backed accountability and encouragement that fuels growth inside & out.</p>
+        </div>
+        <div class="card">
+          <h3>Nutrition + Support</h3>
+          <p>Flexible meal structure plus 1-on-1 chat with Coach Tu’Wan for ongoing support.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Faith-Based Coaching</h3>
-        <p>Scripture-driven mindset coaching to fuel discipline, purpose, and peace.</p>
-      </div>
-      <div class="card">
-        <h3>Nutrition & Accountability</h3>
-        <p>Simple meals and 1-on-1 support to stay on track — with full chat access to Coach Tu’Wan.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="pricing">
-    <h2 class="section-title">1-on-1 Online Coaching</h2>
-    <div class="price-box">
-      <div class="price">$250/mo</div>
-      <ul>
-        <li>✓ Weekly Check-ins</li>
-        <li>✓ Personalized Workout Plan</li>
-        <li>✓ Faith-Based Mindset Training</li>
-        <li>✓ Full Chat Access with Coach Tu’Wan</li>
-      </ul>
-      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn-primary">Join Coaching</a>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">What Clients Say</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>“Coach Tu’Wan didn’t just help me build muscle — he helped me build discipline and faith.”</p>
-        <strong>— Marcus R.</strong>
+    <section>
+      <h2>Pricing Plan</h2>
+      <div class="price-box">
+        <p class="price">$250/month</p>
+        <ul>
+          <li>✓ Weekly check-ins & custom workouts</li>
+          <li>✓ Personalized nutrition guidance</li>
+          <li>✓ Faith-based accountability</li>
+          <li>✓ Direct access to Coach Tu’Wan</li>
+        </ul>
+        <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn-primary">Join Coaching</a>
       </div>
-      <div class="testimonial">
-        <p>“This is the most grounded and confident I’ve ever felt. Coaching changed everything.”</p>
-        <strong>— Anita J.</strong>
-      </div>
-      <div class="testimonial">
-        <p>“100% worth every dollar. The results speak for themselves — inside and out.”</p>
-        <strong>— Jalen M.</strong>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    This is a demo preview. Payment, scheduling, and automation features are not yet live.<br>
-    © 2025 Coach Tu’Wan. Built by FrontendDialed.
-  </footer>
+    <section>
+      <h2>What Clients Say</h2>
+      <div class="testimonials">
+        <div class="card">
+          <p>“This changed more than my body. Coach helped me align with purpose again.”</p>
+          <strong>— Jalen R.</strong>
+        </div>
+        <div class="card">
+          <p>“I was lost in life. Now I’m strong, focused, and finally consistent.”</p>
+          <strong>— Anita C.</strong>
+        </div>
+        <div class="card">
+          <p>“The scripture and structure was everything I didn’t know I needed.”</p>
+          <strong>— Marcus B.</strong>
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      This is a demo build for Coach Tu’Wan. Backend integration is not yet wired up. Built by FrontendDialed.
+    </footer>
+
+  </div>
 </body>
 </html>
