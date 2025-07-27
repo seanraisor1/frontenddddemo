@@ -3,230 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coach Tu'Wan | Faith-Driven Fitness Coaching</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body {
-      font-family: 'Inter', sans-serif;
-      color: #fff;
-      background-color: #0a0f1c;
-      scroll-behavior: smooth;
-    }
-    .hero {
-      background: url('https://raw.githubusercontent.com/seanraisor1/CoachKingPayton/refs/heads/main/Tuwan%20hero.jpg') center center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0 2rem;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-      line-height: 1.2;
-      max-width: 700px;
-    }
-    .hero p {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      color: #c4c4c4;
-      max-width: 600px;
-    }
-    .cta-buttons {
-      margin-top: 2rem;
-    }
-    .cta-buttons a {
-      display: inline-block;
-      background: #3a86ff;
-      padding: 0.9rem 1.5rem;
-      color: white;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 8px;
-      margin: 0 0.5rem;
-      transition: background 0.3s;
-    }
-    .cta-buttons a:hover {
-      background: #265ecf;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .feature {
-      background: #11182a;
-      border-radius: 10px;
-      padding: 2rem;
-      text-align: center;
-    }
-    .feature h3 {
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-    }
-    .pricing-box {
-      background: #11182a;
-      padding: 2.5rem;
-      border-radius: 12px;
-      text-align: center;
-      max-width: 400px;
-      margin: 2rem auto;
-    }
-    .pricing-box h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .pricing-box ul {
-      list-style: none;
-      margin-top: 1.5rem;
-      padding: 0;
-    }
-    .pricing-box ul li {
-      margin-bottom: 1rem;
-    }
-    .pricing-box a {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.9rem 2rem;
-      background: #3a86ff;
-      color: #fff;
-      font-weight: 600;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-    footer {
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      background: #0a0f1c;
-      color: #666;
-    }
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .cta-buttons { display: flex; flex-direction: column; }
-      .cta-buttons a { margin: 0.5rem 0; }
-    }
-  </style>
+  <title>FrontendDialed | Automated Funnels That Close</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="hero">
-    <div>
-      <h1>Faith-Driven Fitness Coaching with Coach Tu'Wan</h1>
-      <p>Transform your body and mindset with training rooted in discipline, faith, and consistency. For men ready to lead from the front.</p>
-      <div class="cta-buttons">
-        <a href="https://calendly.com/seanmnr20/30min" target="_blank">Book Strategy Call</a>
-        <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" target="_blank">Join Now</a>
-      </div>
-    </div>
-  </header>
-
-  <section>
-    <h2 style="text-align:center; font-size:2rem;">What You Get</h2>
-    <div class="features">
-      <div class="feature" data-aos="fade-up">
-        <h3>Customized Training</h3>
-        <p>Workouts tailored to your schedule and goals – updated weekly to keep results moving forward.</p>
-      </div>
-      <div class="feature" data-aos="fade-up" data-aos-delay="100">
-        <h3>Faith-Based Coaching</h3>
-        <p>Tu'Wan blends spiritual strength with fitness discipline to help you grow inside and out.</p>
-      </div>
-      <div class="feature" data-aos="fade-up" data-aos-delay="200">
-        <h3>Nutrition & Support</h3>
-        <p>Custom meal guidance + daily check-ins. Stay accountable and on track every week.</p>
-      </div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Land & Close Clients — Fully Automated in 7 Days</h1>
+    <p>I build premium, done-for-you funnel systems that filter leads, book calls, and collect payment while you sleep.</p>
+    <p class="scarcity">⚠️ Only 5 builds accepted per week. This week’s slots are almost full.</p>
+    <div class="cta-buttons">
+      <a href="#demo" class="btn btn-primary">📄 See Live Demo</a>
+      <a href="https://calendly.com/seanmnr20/30min" class="btn btn-secondary">📞 Book Free Audit</a>
     </div>
   </section>
 
-  <section>
-    <div class="pricing-box" data-aos="zoom-in">
-      <h2>1-on-1 Coaching</h2>
-      <p style="font-size:1.2rem;">$250/month</p>
-      <ul>
-        <li>✅ Weekly Check-ins</li>
-        <li>✅ Personalized Workouts</li>
-        <li>✅ Flexible Nutrition Help</li>
-      </ul>
-      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" target="_blank">Join Coaching</a>
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <p>Used by coaches, creators, and real estate pros to close $5K–$20K/month on autopilot.</p>
+  </section>
+
+  <!-- VALUE STACK -->
+  <section class="value-stack">
+    <h2>What You Get — Built in 7 Days Flat</h2>
+    <ul class="checklist">
+      <li>✅ Custom Landing Page (mobile-optimized, brand-matched)</li>
+      <li>✅ GPT-Powered AI Chatbot (qualifies & answers 24/7)</li>
+      <li>✅ Stripe Checkout (collect payments instantly)</li>
+      <li>✅ Calendly Integration (book calls without back & forth)</li>
+      <li>✅ Email + SMS Lead Capture (automated follow-ups)</li>
+      <li>✅ Scroll animations, pro visuals, modern UX</li>
+    </ul>
+    <p><strong>$2,500 flat. Pay once. Own it forever.</strong></p>
+    <div class="compare-block">
+      <h3>Why not hire an agency?</h3>
+      <p>Agencies take 4–6 weeks, cost $5K–$15K, and still ask <em>you</em> to write the copy and manage the flow.</p>
+      <p><strong>This is different:</strong> I build everything for you — fast, polished, and engineered to close.</p>
     </div>
   </section>
 
-  <section style="background:#0f1525; padding: 4rem 2rem;">
-    <h2 style="text-align:center; font-size:2rem; margin-bottom: 2rem;">What Real Clients Say</h2>
-    <div class="features">
-      <div class="feature" data-aos="fade-up">
-        <h3>Mike R. – Lost 30lbs</h3>
-        <p>"Tu'Wan helped me drop 30 pounds in 12 weeks. I’ve never felt more in control of my life. This wasn’t just about the body, it was about becoming a man of discipline."</p>
-      </div>
-      <div class="feature" data-aos="fade-up" data-aos-delay="100">
-        <h3>James B. – Busy Father</h3>
-        <p>"I used to work 12-hour shifts and couldn’t stay consistent. With Coach Tu’Wan, I now have a system that works. Daily check-ins kept me locked in and progressing."</p>
-      </div>
-      <div class="feature" data-aos="fade-up" data-aos-delay="200">
-        <h3>Derrick S. – Mental Reset</h3>
-        <p>"What stood out to me was the spiritual mindset approach. I didn’t just get stronger — I became a better leader, father, and man. This program saved my life."</p>
-      </div>
-      <div class="feature" data-aos="fade-up" data-aos-delay="300">
-        <h3>Travis K. – Entrepreneur</h3>
-        <p>"Running a business had me burnt out. Tu’Wan’s program brought back structure and confidence. My energy is up, I’m locked in, and I’m performing better in all areas."</p>
-      </div>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>Client Wins</h2>
+    <div class="testimonial">
+      <p>“I booked 3 high-ticket clients in my first week using this funnel. Game changer.”</p>
+      <span>- Jordan R., Fitness Coach</span>
+    </div>
+    <div class="testimonial">
+      <p>“I paid $2,500 and closed $10K within 30 days. It runs on autopilot now.”</p>
+      <span>- Ava C., Agency Owner</span>
+    </div>
+    <div class="testimonial">
+      <p>“This replaced my entire outreach workflow. Leads qualify themselves and book instantly.”</p>
+      <span>- Malik P., Closer</span>
     </div>
   </section>
-
-  <section style="background:#0a0f1c;">
-    <h2 style="text-align:center; font-size:2rem;">Results That Speak</h2>
-    <div class="features">
-      <div class="feature"><h3><span id="clients">0</span>+ Men Coached</h3></div>
-      <div class="feature"><h3><span id="pounds">0</span> lbs Lost</h3></div>
-      <div class="feature"><h3><span id="mindsets">0</span> Mindsets Rebuilt</h3></div>
-    </div>
+  <!-- FOUNDER STORY -->
+  <section class="founder-story">
+    <h2>Built by a Developer Who Actually Closes</h2>
+    <p>I’ve seen creators burn cash on pretty websites that didn’t convert — or waste hours chasing unqualified leads.</p>
+    <p>I built FrontendDialed to do the opposite: automate everything. Filter tire-kickers. Book real buyers. Close while you sleep.</p>
+    <p>This isn't a service. It’s a weapon — handcrafted and proven to perform.</p>
+    <p>— Sean Raisor, Founder</p>
   </section>
 
-  <section style="background:#11182a;">
-    <h2 style="text-align:center; font-size:2rem;">Ask The AI Assistant</h2>
-    <p style="text-align:center; color:#c4c4c4; margin: 0 auto; max-width: 600px;">
-      Have questions about training, nutrition, or booking? Our assistant can help — 24/7.
-    </p>
-    <div style="margin-top:2rem; display:flex; justify-content:center;">
-      <iframe src="https://frontenddialed.com/chatbot-demo" width="100%" height="500px" style="border: none; border-radius: 10px; max-width: 900px;"></iframe>
-    </div>
+  <!-- WHY IT WORKS -->
+  <section class="why-it-works">
+    <h2>Why It Works</h2>
+    <ul>
+      <li>⚡ Instant Chatbot = No Missed Leads</li>
+      <li>🎯 Prequalifying = Saves 10+ Hours/Week</li>
+      <li>💳 Stripe Checkout = Closes Hot Leads on the Spot</li>
+    </ul>
   </section>
 
-  <footer style="margin-top: 2rem;">
-    <p>Contact: <a href="mailto:seanmnr20@gmail.com" style="color: #3a86ff;">seanmnr20@gmail.com</a></p>
-    <p style="margin-top: 0.5rem;">&copy; 2025 Coach Tu'Wan. Funnel built by FrontendDialed.</p>
+  <!-- FINAL CTA -->
+  <section class="cta-final">
+    <h2>🚨 Only 5 Builds Per Week</h2>
+    <p>Once slots are gone, you're waiting until next week. This isn't hype — it's a solo dev delivering premium work.</p>
+    <a href="https://calendly.com/seanmnr20/30min" class="btn btn-primary">🔒 Lock In My Build</a>
+  </section>
+  <!-- EMAIL MODAL -->
+  <div class="modal" id="emailModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>📬 Want the Full Walkthrough + Checklist?</h3>
+      <p>Enter your email below and I’ll send the exact breakdown I use to close $2.5K funnel clients.</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>Send It</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 FrontendDialed. All rights reserved.</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    function animateValue(id, start, end, duration) {
-      let obj = document.getElementById(id);
-      let range = end - start;
-      let stepTime = Math.abs(Math.floor(duration / range));
-      let current = start;
-      let increment = end > start ? 1 : -1;
-      let timer = setInterval(() => {
-        current += increment;
-        obj.textContent = current;
-        if (current == end) clearInterval(timer);
-      }, stepTime);
-    }
-    window.addEventListener('load', () => {
-      animateValue("clients", 0, 150, 2000);
-      animateValue("pounds", 0, 1800, 2500);
-      animateValue("mindsets", 0, 300, 2200);
-    });
-  </script>
-
+  <!-- SCRIPTS -->
+  <script src="scripts.js"></script>
 </body>
 </html>
